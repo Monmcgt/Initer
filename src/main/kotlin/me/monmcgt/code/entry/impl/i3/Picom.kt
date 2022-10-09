@@ -7,6 +7,7 @@ import me.monmcgt.code.entry.Register
 @Register(DesktopSessions.I3)
 class Picom : Entry() {
     override fun execute() {
-        runCommand("$home/.config/picom/launch.sh")
+        runCommand("/usr/bin/pkill", "picom")?.waitFor()
+        runCommand("/usr/bin/picom", "-f")
     }
 }

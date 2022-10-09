@@ -3,17 +3,30 @@ package me.monmcgt.code.entry
 abstract class EntryUtility {
     val home = env("HOME")
 
-    fun runCommand(command: String) {
-        Runtime.getRuntime().exec(command)
+    fun runCommand(command: String): Process? {
+        return ProcessBuilder(command.split(" ")).start()
     }
 
-    fun runCommand(command: String, args: Array<String>) {
-        Runtime.getRuntime().exec(command, args)
+    fun runCommand(command: String, args: Array<String>): Process? {
+        return ProcessBuilder(command.split(" ") + args).start()
     }
 
     @JvmName("runCommandVarArgs")
-    fun runCommand(command: String, vararg args: String) {
-        Runtime.getRuntime().exec(command, args)
+    fun runCommand(command: String, vararg args: String): Process? {
+        return ProcessBuilder(command.split(" ") + args).start()
+    }
+
+    fun runCommandBackground(command: String) {
+        ProcessBuilder(arrayListOf("/usr/bin/nohup", command)).start()
+    }
+
+    fun runCommandBackground(command: String, args: Array<String>) {
+        ProcessBuilder(arrayListOf("/usr/bin/nohup", command) + args).start()
+    }
+
+    @JvmName("runCommandBackgroundVarArgs")
+    fun runCommandBackground(command: String, vararg args: String) {
+        ProcessBuilder(arrayListOf("/usr/bin/nohup", command) + args).start()
     }
 
     fun createProcessBuilder(command: String): ProcessBuilder {

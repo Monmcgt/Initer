@@ -7,6 +7,6 @@ import me.monmcgt.code.entry.Register
 @Register(DesktopSessions.I3)
 class BackgroundFill : Entry() {
     override fun execute() {
-        runCommand("/usr/local/bin/bg-fill", "$home/Pictures/Wallpapers/mountain-landscape-low-poly-minimalist-minimalism-y7313.jpg")
+        runCommand("/usr/bin/feh", "--bg-fill", "$home/Pictures/Wallpapers/mountain-landscape-low-poly-minimalist-minimalism-y7313.jpg")
     }
 }

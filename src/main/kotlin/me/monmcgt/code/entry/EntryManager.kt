@@ -1,19 +1,17 @@
 package me.monmcgt.code.entry
 
 import me.monmcgt.code.entry.DesktopSessions.ANY
+import me.monmcgt.code.logger.Logger
 import me.monmcgt.code.util.ClassScanner
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
 
 
 object EntryManager {
     private val tempFile = File("/tmp/.monmcgt/initer/initer.run")
     private var entries: MutableList<Entry> = mutableListOf()
     private var alreadyRun: Boolean = tempFile.exists()
-    private var executor: ExecutorService = Executors.newFixedThreadPool(50)
 
     fun init() {
         scanClass().forEach(EntryManager::registerCommand)
@@ -21,17 +19,20 @@ object EntryManager {
 
     fun run() {
         val desktopSession = DesktopSessions.getDesktopSession(System.getenv("DESKTOP_SESSION"))
+        Logger.info("Current desktop session: $desktopSession")
         entries.forEach {
             val info = it.info
             if (!(info.desktopSession == ANY || info.desktopSession == desktopSession)) {
-                return
+                return@forEach
             }
             if (alreadyRun && info.onlyOnce) {
-                return
+                return@forEach
             }
             it.alreadyRun = alreadyRun
             it.desktopSessions = desktopSession
-            executor.submit(it::execute)
+            Thread {
+                it.execute()
+            }.start()
         }
         if (!alreadyRun) {
             tempFile.parentFile.mkdirs()

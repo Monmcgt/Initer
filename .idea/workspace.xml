@@ -4,35 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="Initial Commit">
       <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/DesktopSessions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/Entry.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryUtility.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/Register.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/CopyQ.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/JetBrainsToolbox.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NoiseTorch.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NumlockX.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/BackgroundFill.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Wired.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/kde/LatteDock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/util/ClassScanner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryUtility.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryUtility.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/BackgroundFill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/BackgroundFill.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Picom.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Picom.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Polybar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Polybar.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +98,7 @@
         <option value="package-info" />
         <option value="Kotlin Enum" />
         <option value="Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -161,7 +142,7 @@
       <recent name="me.monmcgt.code.entry.impl.any" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Initer [run]">
+  <component name="RunManager" selected="Kotlin.Main">
     <configuration name="Initer [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Initer [run]" />
         <item itemvalue="Kotlin.Main" />
+        <item itemvalue="Gradle.Initer [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -206,8 +187,17 @@
       <option name="presentableId" value="Default" />
       <updated>1665299026481</updated>
       <workItem from="1665299027777" duration="1131000" />
-      <workItem from="1665302784572" duration="8318000" />
+      <workItem from="1665302784572" duration="8811000" />
+      <workItem from="1665312156319" duration="2087000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1665311459866</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665311459866</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +214,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Initer$Main.ic" NAME="Main Coverage Results" MODIFIED="1665304675907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Initer$Main.ic" NAME="Main Coverage Results" MODIFIED="1665312401097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
