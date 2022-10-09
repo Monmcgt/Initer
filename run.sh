@@ -1,0 +1,1 @@
+kotlin -cp "$HOME"/IdeaProjects/Initer/build/classes/kotlin/main/ me.monmcgt.code.Main
