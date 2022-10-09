@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="fix something">
+    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="replace Wired with Dunst">
       <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/util/InstanceUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/util/Util.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Wired.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Wired.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/Entry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/Entry.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/EntryUtility.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/CopyQ.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/CopyQ.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/JetBrainsToolbox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/JetBrainsToolbox.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NoiseTorch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NoiseTorch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NumlockX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NumlockX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/BackgroundFill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/BackgroundFill.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Dunst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Dunst.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Picom.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Picom.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Polybar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Polybar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/kde/LatteDock.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/kde/LatteDock.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/logger/Logger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/logger/Logger.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,9 +108,9 @@
         <option value="package-info" />
         <option value="Kotlin Enum" />
         <option value="Class" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -185,7 +200,9 @@
       <workItem from="1665299027777" duration="1131000" />
       <workItem from="1665302784572" duration="8811000" />
       <workItem from="1665312156319" duration="2435000" />
-      <workItem from="1665331584645" duration="296000" />
+      <workItem from="1665331584645" duration="491000" />
+      <workItem from="1665335814317" duration="734000" />
+      <workItem from="1665345615483" duration="1862000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1665311459866</created>
@@ -201,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665314577961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="replace Wired with Dunst">
+      <created>1665332053737</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665332053737</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +245,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="fix something" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix something" />
+    <MESSAGE value="replace Wired with Dunst" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace Wired with Dunst" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Initer$Main.ic" NAME="Main Coverage Results" MODIFIED="1665312401097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -3,9 +3,8 @@ package me.monmcgt.code.entry
 import me.monmcgt.code.entry.DesktopSessions.ANY
 import me.monmcgt.code.logger.Logger
 import me.monmcgt.code.util.ClassScanner
+import me.monmcgt.code.util.formattedDate
 import java.io.File
-import java.text.SimpleDateFormat
-import java.util.*
 
 
 object EntryManager {
@@ -38,7 +37,7 @@ object EntryManager {
             tempFile.parentFile.mkdirs()
             tempFile.createNewFile()
             tempFile.bufferedWriter().use {
-                it.write(SimpleDateFormat("yyyy-MM-dd HH:mm:ss\n").format(Date()))
+                it.write(formattedDate() + "\n")
             }
         }
     }
