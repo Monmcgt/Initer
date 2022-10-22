@@ -9,6 +9,6 @@ import me.monmcgt.code.util.runCommand
 class Polybar : Entry() {
     override fun execute() {
         runCommand("/usr/bin/polybar-msg", "cmd", "quit")?.waitFor()
-        runCommand("/usr/bin/polybar", "mainBar")
+        runCommand("/usr/local/bin/bk", "/usr/bin/polybar", "mainBar")
     }
 }

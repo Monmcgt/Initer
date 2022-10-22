@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="shutdown an old process when run">
+    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="add kde-connect">
       <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Polybar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/i3/Polybar.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +92,9 @@
         <option value="package-info" />
         <option value="Kotlin Enum" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -185,6 +187,9 @@
       <workItem from="1665331584645" duration="491000" />
       <workItem from="1665335814317" duration="734000" />
       <workItem from="1665345615483" duration="2043000" />
+      <workItem from="1665347861192" duration="144000" />
+      <workItem from="1665560537714" duration="673000" />
+      <workItem from="1666020587840" duration="996000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1665311459866</created>
@@ -214,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665347649275</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add pid in Logger">
+      <created>1665347973875</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665347973875</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add kde-connect">
+      <created>1665561172800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665561172800</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +255,9 @@
     <MESSAGE value="fix something" />
     <MESSAGE value="replace Wired with Dunst" />
     <MESSAGE value="shutdown an old process when run" />
-    <option name="LAST_COMMIT_MESSAGE" value="shutdown an old process when run" />
+    <MESSAGE value="add pid in Logger" />
+    <MESSAGE value="add kde-connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add kde-connect" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Initer$Main.ic" NAME="Main Coverage Results" MODIFIED="1665312401097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
