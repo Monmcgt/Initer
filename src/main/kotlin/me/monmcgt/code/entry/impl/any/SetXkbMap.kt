@@ -7,6 +7,6 @@ import me.monmcgt.code.util.runCommand
 @Register(onlyOnce = true)
 class SetXkbMap : Entry() {
     override fun execute() {
-        runCommand("setxkbmap", "-option", "ctrl:nocaps")
+        runCommand("/usr/bin/setxkbmap", "-option", "ctrl:nocaps")
     }
 }
