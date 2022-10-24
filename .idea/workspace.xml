@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="fix setxkbmap">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+    <list default="true" id="66bedb95-d1f8-435f-b07c-5c1d90fbaf7a" name="Changes" comment="add sleep in NoiseTorch.kt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NoiseTorch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/NoiseTorch.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/SetXkbMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/entry/impl/any/SetXkbMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/util/Util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/me/monmcgt/code/util/Util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/INFO" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +286,8 @@
     <MESSAGE value="remove caps lock and fix polybar" />
     <MESSAGE value="add util files" />
     <MESSAGE value="fix setxkbmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix setxkbmap" />
+    <MESSAGE value="add sleep in NoiseTorch.kt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sleep in NoiseTorch.kt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Initer$Main.ic" NAME="Main Coverage Results" MODIFIED="1665312401097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
