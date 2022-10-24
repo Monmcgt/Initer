@@ -89,3 +89,7 @@ fun env(env: String): String {
 fun formattedDate(): String {
     return SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Date())
 }
+
+fun sleep(millis: Long) {
+    Thread.sleep(millis)
+}
