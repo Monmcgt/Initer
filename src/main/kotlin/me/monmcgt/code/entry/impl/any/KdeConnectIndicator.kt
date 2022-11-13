@@ -10,7 +10,7 @@ import me.monmcgt.code.util.sleep
 class KdeConnectIndicator : Entry() {
     override fun execute() {
         killProcess("kdeconnect-indicator", true)
-        sleep(2500)
+        sleep(5000)
         runCommand("/usr/bin/kdeconnect-indicator")
     }
 }
