@@ -18,7 +18,7 @@ class Picom : Entry() {
         val configDir = System.getenv("XDG_CONFIG_HOME") ?: "${System.getProperty("user.home")}/.config"
         val argsFile = File("$configDir/picom/args.txt")
         return if (argsFile.exists()) {
-            argsFile.readLines().map { line -> line.split("\\s+".toRegex()) }.flatten().filter { it.isNotEmpty() }.toTypedArray()
+            argsFile.readLines().filterNot { it.startsWith("#") }.map { line -> line.split("\\s+".toRegex()) }.flatten().filter { it.isNotEmpty() }.toTypedArray()
         } else {
             emptyArray()
         }
