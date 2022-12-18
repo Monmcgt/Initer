@@ -7,8 +7,8 @@ import me.monmcgt.code.util.HOME
 import me.monmcgt.code.util.runCommand
 
 @Register(DesktopSessions.I3)
-class BackgroundFill : Entry() {
+class Feh : Entry() {
     override fun execute() {
-        runCommand("/usr/bin/feh", "--bg-fill", "$HOME/Pictures/Wallpapers/mountain-landscape-low-poly-minimalist-minimalism-y7313.jpg")
+        runCommand("/usr/bin/feh", "--bg-fill", "$HOME/Pictures/Wallpapers/FG-DAqxaAAUPRl7.jpg")
     }
 }
